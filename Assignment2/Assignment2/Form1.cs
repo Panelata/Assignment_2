@@ -15,8 +15,18 @@ namespace Assignment2
         public Form1()
         {
             InitializeComponent();
+            
         }
 
-        //test commit
+        private void loginB_Click(object sender, EventArgs e)
+        {
+            String username = usernameTB.Text;
+            testL.Text = username;
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
