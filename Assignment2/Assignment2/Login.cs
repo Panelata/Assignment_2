@@ -37,7 +37,8 @@ namespace Assignment2
 
         public override string ToString()
         {
-            return "First: " + firstName + " Last: " + lastName + " Username: "+ userName + " password: "+ password+ "DOB: " + DOB + " UserType: " + userType;
+            return userName +"," + password + "," + userType + "," + firstName + "," + lastName + "," + DOB;
+            //return "First: " + firstName + " Last: " + lastName + " Username: "+ userName + " password: "+ password+ "DOB: " + DOB + " UserType: " + userType;
         }
     }
 }

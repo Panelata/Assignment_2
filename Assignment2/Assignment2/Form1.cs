@@ -19,23 +19,34 @@ namespace Assignment2
         public Form1()
         {
             InitializeComponent();
-
-            string[] lines = System.IO.File.ReadAllLines("login.txt");
+            readFile();
+           /* string[] lines = System.IO.File.ReadAllLines("login.txt");
             foreach(string set in lines)
             {
                 string[] splits = set.Split(',');
                 loginList.AddFirst(new Login(splits[0], splits[1], splits[2], splits[3], splits[4], splits[5]));
                 listSize++;
+            }*/
+        }
+
+        //This reads the file and stores the login details in linkedlist
+        private void readFile()
+        {
+            listSize = 0;
+            string[] lines = System.IO.File.ReadAllLines("login.txt");
+            foreach (string set in lines)
+            {
+                string[] splits = set.Split(',');
+                loginList.AddFirst(new Login(splits[0], splits[1], splits[2], splits[3], splits[4], splits[5]));
+                listSize++;
             }
-           // Console.WriteLine(listSize);
-           // Login test = loginList.ElementAt(0);
-           // Console.WriteLine(test.ToString());
         }
 
         private void loginB_Click(object sender, EventArgs e)
         {
             String usernameInput = usernameTB.Text;
             String passwordInput = passwordTB.Text;
+            int match = 0; //If a match is found, this value changes to 1;
 
             //Loops through the linkedlist checking to see if the password and username matches.
             for (int i = 0; i < listSize; i++)
@@ -44,9 +55,14 @@ namespace Assignment2
                 if (usernameInput.Equals(check.getUsername()) && passwordInput.Equals(check.getPassword()))
                 {
                     //Add function here to open a new window, that window will be the actual text editor
-                    Console.WriteLine("IT WORKS");
+                    Console.WriteLine(check.ToString());
+                    match = 1;
+                    break;
                 }
             }
+            //if match is 0, then message box states that the username or password is incorrect.
+            if (match == 0)
+                MessageBox.Show("Incorrect username or password.", "Incorrect login");
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -61,7 +77,11 @@ namespace Assignment2
 
         private void newUserB_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            Form2 form2 = new Form2();
+            form2.ShowDialog();
+            readFile();
+            this.Show();
         }
     }
 }
