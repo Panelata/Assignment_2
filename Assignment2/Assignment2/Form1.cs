@@ -46,23 +46,40 @@ namespace Assignment2
         {
             String usernameInput = usernameTB.Text;
             String passwordInput = passwordTB.Text;
-            int match = 0; //If a match is found, this value changes to 1;
+            int match = 0; //will be used to matech the user.
+            int intCheck = 0; //Used to check whether the user has been found or not.
+            Login check;
 
-            //Loops through the linkedlist checking to see if the password and username matches.
+            //Loops through the linkedlist checking to see if the password and username matches and sets intCheck to 1 if a match is found.
             for (int i = 0; i < listSize; i++)
             {
-                Login check = loginList.ElementAt(i);
+                check = loginList.ElementAt(i);
                 if (usernameInput.Equals(check.getUsername()) && passwordInput.Equals(check.getPassword()))
                 {
-                    //Add function here to open a new window, that window will be the actual text editor
-                    Console.WriteLine(check.ToString());
-                    match = 1;
+                    intCheck = 1;
+                    match = i;
                     break;
                 }
             }
-            //if match is 0, then message box states that the username or password is incorrect.
-            if (match == 0)
+
+            //if match is 0, then message box states that the username or password is incorrect. Else it will open a form depending on the userType.
+            if (intCheck == 0)
                 MessageBox.Show("Incorrect username or password.", "Incorrect login");
+            else
+            {
+                check = loginList.ElementAt(match);
+                if (check.getUserType().Equals("View"))
+                {
+                    Console.WriteLine("THIS USER IS VIEW ONLY");
+                    this.Hide();
+                    Form3 form3 = new Form3();
+                    form3.ShowDialog();
+                    this.Show();
+                } else
+                {
+                    Console.WriteLine("THIS USER CAN EDIT");
+                }
+            }
         }
 
         private void Form1_Load(object sender, EventArgs e)

@@ -25,6 +25,11 @@ namespace Assignment2
             this.userType = userType;
         }
 
+        public String getUserType()
+        {
+            return this.userType;
+        }
+
         public String getUsername()
         {
             return this.userName;
