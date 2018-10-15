@@ -78,6 +78,10 @@ namespace Assignment2
                 } else
                 {
                     Console.WriteLine("THIS USER CAN EDIT");
+                    this.Hide();
+                    Edit editForm = new Edit();
+                    editForm.ShowDialog();
+                    this.Show();
                 }
             }
         }
