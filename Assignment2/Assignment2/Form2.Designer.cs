@@ -30,20 +30,20 @@
         {
             this.cancelB = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.usernameTB = new System.Windows.Forms.TextBox();
-            this.passwordTB = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.rePasswordTB = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.firstnameTB = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.lastnameTB = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
+            this.typeCB = new System.Windows.Forms.ComboBox();
+            this.label7 = new System.Windows.Forms.Label();
             this.dobTB = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.typeCB = new System.Windows.Forms.ComboBox();
+            this.lastnameTB = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.firstnameTB = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.rePasswordTB = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.passwordTB = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.usernameTB = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.submitB = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -82,38 +82,75 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "New User";
             // 
-            // label1
+            // typeCB
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(65, 44);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(86, 17);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Username:";
+            this.typeCB.FormattingEnabled = true;
+            this.typeCB.Items.AddRange(new object[] {
+            "View",
+            "Edit"});
+            this.typeCB.Location = new System.Drawing.Point(157, 239);
+            this.typeCB.Name = "typeCB";
+            this.typeCB.Size = new System.Drawing.Size(100, 24);
+            this.typeCB.TabIndex = 13;
+            this.typeCB.Text = "Select One";
+            this.typeCB.SelectedIndexChanged += new System.EventHandler(this.typeCB_SelectedIndexChanged);
             // 
-            // usernameTB
+            // label7
             // 
-            this.usernameTB.Location = new System.Drawing.Point(157, 41);
-            this.usernameTB.Name = "usernameTB";
-            this.usernameTB.Size = new System.Drawing.Size(100, 23);
-            this.usernameTB.TabIndex = 1;
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(60, 239);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(89, 17);
+            this.label7.TabIndex = 12;
+            this.label7.Text = "User-Type:";
             // 
-            // passwordTB
+            // dobTB
             // 
-            this.passwordTB.Location = new System.Drawing.Point(157, 74);
-            this.passwordTB.Name = "passwordTB";
-            this.passwordTB.Size = new System.Drawing.Size(100, 23);
-            this.passwordTB.TabIndex = 3;
-            this.passwordTB.UseSystemPasswordChar = true;
+            this.dobTB.Location = new System.Drawing.Point(157, 205);
+            this.dobTB.Name = "dobTB";
+            this.dobTB.Size = new System.Drawing.Size(100, 23);
+            this.dobTB.TabIndex = 11;
             // 
-            // label2
+            // label6
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(69, 77);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(82, 17);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "Password:";
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(46, 208);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(105, 17);
+            this.label6.TabIndex = 10;
+            this.label6.Text = "Date of Birth:";
+            // 
+            // lastnameTB
+            // 
+            this.lastnameTB.Location = new System.Drawing.Point(157, 173);
+            this.lastnameTB.Name = "lastnameTB";
+            this.lastnameTB.Size = new System.Drawing.Size(100, 23);
+            this.lastnameTB.TabIndex = 9;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(61, 176);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(90, 17);
+            this.label5.TabIndex = 8;
+            this.label5.Text = "Last Name:";
+            // 
+            // firstnameTB
+            // 
+            this.firstnameTB.Location = new System.Drawing.Point(157, 140);
+            this.firstnameTB.Name = "firstnameTB";
+            this.firstnameTB.Size = new System.Drawing.Size(100, 23);
+            this.firstnameTB.TabIndex = 7;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(60, 143);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(91, 17);
+            this.label4.TabIndex = 6;
+            this.label4.Text = "First Name:";
             // 
             // rePasswordTB
             // 
@@ -132,74 +169,38 @@
             this.label3.TabIndex = 4;
             this.label3.Text = "Re-Enter Password:";
             // 
-            // firstnameTB
+            // passwordTB
             // 
-            this.firstnameTB.Location = new System.Drawing.Point(157, 140);
-            this.firstnameTB.Name = "firstnameTB";
-            this.firstnameTB.Size = new System.Drawing.Size(100, 23);
-            this.firstnameTB.TabIndex = 7;
+            this.passwordTB.Location = new System.Drawing.Point(157, 74);
+            this.passwordTB.Name = "passwordTB";
+            this.passwordTB.Size = new System.Drawing.Size(100, 23);
+            this.passwordTB.TabIndex = 3;
+            this.passwordTB.UseSystemPasswordChar = true;
             // 
-            // label4
+            // label2
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(60, 143);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(91, 17);
-            this.label4.TabIndex = 6;
-            this.label4.Text = "First Name:";
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(69, 77);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(82, 17);
+            this.label2.TabIndex = 2;
+            this.label2.Text = "Password:";
             // 
-            // lastnameTB
+            // usernameTB
             // 
-            this.lastnameTB.Location = new System.Drawing.Point(157, 173);
-            this.lastnameTB.Name = "lastnameTB";
-            this.lastnameTB.Size = new System.Drawing.Size(100, 23);
-            this.lastnameTB.TabIndex = 9;
+            this.usernameTB.Location = new System.Drawing.Point(157, 41);
+            this.usernameTB.Name = "usernameTB";
+            this.usernameTB.Size = new System.Drawing.Size(100, 23);
+            this.usernameTB.TabIndex = 1;
             // 
-            // label5
+            // label1
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(61, 176);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(90, 17);
-            this.label5.TabIndex = 8;
-            this.label5.Text = "Last Name:";
-            // 
-            // dobTB
-            // 
-            this.dobTB.Location = new System.Drawing.Point(157, 205);
-            this.dobTB.Name = "dobTB";
-            this.dobTB.Size = new System.Drawing.Size(100, 23);
-            this.dobTB.TabIndex = 11;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(46, 208);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(105, 17);
-            this.label6.TabIndex = 10;
-            this.label6.Text = "Date of Birth:";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(60, 239);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(89, 17);
-            this.label7.TabIndex = 12;
-            this.label7.Text = "User-Type:";
-            // 
-            // typeCB
-            // 
-            this.typeCB.FormattingEnabled = true;
-            this.typeCB.Items.AddRange(new object[] {
-            "View",
-            "Edit"});
-            this.typeCB.Location = new System.Drawing.Point(157, 239);
-            this.typeCB.Name = "typeCB";
-            this.typeCB.Size = new System.Drawing.Size(100, 24);
-            this.typeCB.TabIndex = 13;
-            this.typeCB.Text = "Select One";
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(65, 44);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(86, 17);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Username:";
             // 
             // submitB
             // 

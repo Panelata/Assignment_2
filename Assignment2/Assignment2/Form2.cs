@@ -46,5 +46,10 @@ namespace Assignment2
                 MessageBox.Show("All fields are required.", "Error");
             }
         }
+
+        private void typeCB_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
