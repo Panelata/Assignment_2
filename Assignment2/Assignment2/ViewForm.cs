@@ -184,7 +184,7 @@ namespace Assignment2
 
         private void openSB_Click(object sender, EventArgs e)
         {
-            richTB.Paste();
+            open();
         }
     }
 }

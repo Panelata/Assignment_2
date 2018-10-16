@@ -55,13 +55,13 @@
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.fontSizeSCB = new System.Windows.Forms.ToolStripComboBox();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripLabel1 = new System.Windows.Forms.ToolStripLabel();
             this.currentUserL = new System.Windows.Forms.ToolStripLabel();
             this.toolStrip2 = new System.Windows.Forms.ToolStrip();
+            this.richTB = new System.Windows.Forms.RichTextBox();
+            this.toolStripLabel1 = new System.Windows.Forms.ToolStripLabel();
             this.cutSB = new System.Windows.Forms.ToolStripButton();
             this.copySB = new System.Windows.Forms.ToolStripButton();
             this.openSB = new System.Windows.Forms.ToolStripButton();
-            this.richTB = new System.Windows.Forms.RichTextBox();
             this.menuStrip1.SuspendLayout();
             this.toolStrip1.SuspendLayout();
             this.toolStrip2.SuspendLayout();
@@ -114,7 +114,7 @@
             // toolStripMenuItem1
             // 
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(177, 6);
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(135, 6);
             // 
             // saveToolStripMenuItem
             // 
@@ -128,20 +128,20 @@
             // saveAsToolStripMenuItem
             // 
             this.saveAsToolStripMenuItem.Name = "saveAsToolStripMenuItem";
-            this.saveAsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.saveAsToolStripMenuItem.Size = new System.Drawing.Size(138, 22);
             this.saveAsToolStripMenuItem.Text = "Save As";
             this.saveAsToolStripMenuItem.Click += new System.EventHandler(this.saveAsToolStripMenuItem_Click);
             // 
             // toolStripMenuItem2
             // 
             this.toolStripMenuItem2.Name = "toolStripMenuItem2";
-            this.toolStripMenuItem2.Size = new System.Drawing.Size(177, 6);
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(135, 6);
             // 
             // logOutToolStripMenuItem
             // 
             this.logOutToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Transparent;
             this.logOutToolStripMenuItem.Name = "logOutToolStripMenuItem";
-            this.logOutToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.logOutToolStripMenuItem.Size = new System.Drawing.Size(138, 22);
             this.logOutToolStripMenuItem.Text = "Logout";
             this.logOutToolStripMenuItem.Click += new System.EventHandler(this.logOutToolStripMenuItem_Click);
             // 
@@ -193,7 +193,7 @@
             // aboutToolStripMenuItem1
             // 
             this.aboutToolStripMenuItem1.Name = "aboutToolStripMenuItem1";
-            this.aboutToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.aboutToolStripMenuItem1.Size = new System.Drawing.Size(116, 22);
             this.aboutToolStripMenuItem1.Text = "About...";
             this.aboutToolStripMenuItem1.Click += new System.EventHandler(this.aboutToolStripMenuItem1_Click);
             // 
@@ -318,13 +318,6 @@
             this.toolStripSeparator2.Name = "toolStripSeparator2";
             this.toolStripSeparator2.Size = new System.Drawing.Size(6, 25);
             // 
-            // toolStripLabel1
-            // 
-            this.toolStripLabel1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
-            this.toolStripLabel1.Name = "toolStripLabel1";
-            this.toolStripLabel1.Size = new System.Drawing.Size(67, 22);
-            this.toolStripLabel1.Text = "Username:";
-            // 
             // currentUserL
             // 
             this.currentUserL.Name = "currentUserL";
@@ -340,9 +333,24 @@
             this.openSB});
             this.toolStrip2.Location = new System.Drawing.Point(0, 49);
             this.toolStrip2.Name = "toolStrip2";
-            this.toolStrip2.Size = new System.Drawing.Size(32, 401);
+            this.toolStrip2.Size = new System.Drawing.Size(24, 401);
             this.toolStrip2.TabIndex = 3;
             this.toolStrip2.Text = "toolStrip2";
+            // 
+            // richTB
+            // 
+            this.richTB.Location = new System.Drawing.Point(30, 49);
+            this.richTB.Name = "richTB";
+            this.richTB.Size = new System.Drawing.Size(770, 401);
+            this.richTB.TabIndex = 4;
+            this.richTB.Text = "";
+            // 
+            // toolStripLabel1
+            // 
+            this.toolStripLabel1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.toolStripLabel1.Name = "toolStripLabel1";
+            this.toolStripLabel1.Size = new System.Drawing.Size(67, 22);
+            this.toolStripLabel1.Text = "Username:";
             // 
             // cutSB
             // 
@@ -371,16 +379,8 @@
             this.openSB.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.openSB.Name = "openSB";
             this.openSB.Size = new System.Drawing.Size(29, 20);
-            this.openSB.Text = "Paste";
+            this.openSB.Text = "Open";
             this.openSB.Click += new System.EventHandler(this.openSB_Click);
-            // 
-            // richTB
-            // 
-            this.richTB.Location = new System.Drawing.Point(30, 49);
-            this.richTB.Name = "richTB";
-            this.richTB.Size = new System.Drawing.Size(770, 401);
-            this.richTB.TabIndex = 4;
-            this.richTB.Text = "";
             // 
             // Edit
             // 
