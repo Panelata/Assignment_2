@@ -79,7 +79,7 @@ namespace Assignment2
                 {
                     Console.WriteLine("THIS USER CAN EDIT");
                     this.Hide();
-                    Edit editForm = new Edit();
+                    Edit editForm = new Edit(check.getUsername());
                     editForm.ShowDialog();
                     this.Show();
                 }

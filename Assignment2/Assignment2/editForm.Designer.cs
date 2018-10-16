@@ -53,9 +53,11 @@
             this.italicSB = new System.Windows.Forms.ToolStripButton();
             this.underlineSB = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.fontSizeSCB = new System.Windows.Forms.ToolStripComboBox();
             this.toolStrip2 = new System.Windows.Forms.ToolStrip();
             this.richTB = new System.Windows.Forms.RichTextBox();
-            this.fontSizeSCB = new System.Windows.Forms.ToolStripComboBox();
+            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
+            this.currentUserL = new System.Windows.Forms.ToolStripLabel();
             this.menuStrip1.SuspendLayout();
             this.toolStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -190,7 +192,9 @@
             this.italicSB,
             this.underlineSB,
             this.toolStripSeparator1,
-            this.fontSizeSCB});
+            this.fontSizeSCB,
+            this.toolStripSeparator2,
+            this.currentUserL});
             this.toolStrip1.Location = new System.Drawing.Point(0, 24);
             this.toolStrip1.Name = "toolStrip1";
             this.toolStrip1.Size = new System.Drawing.Size(800, 25);
@@ -272,23 +276,6 @@
             this.toolStripSeparator1.Name = "toolStripSeparator1";
             this.toolStripSeparator1.Size = new System.Drawing.Size(6, 25);
             // 
-            // toolStrip2
-            // 
-            this.toolStrip2.Dock = System.Windows.Forms.DockStyle.Left;
-            this.toolStrip2.Location = new System.Drawing.Point(0, 49);
-            this.toolStrip2.Name = "toolStrip2";
-            this.toolStrip2.Size = new System.Drawing.Size(26, 401);
-            this.toolStrip2.TabIndex = 3;
-            this.toolStrip2.Text = "toolStrip2";
-            // 
-            // richTB
-            // 
-            this.richTB.Location = new System.Drawing.Point(30, 49);
-            this.richTB.Name = "richTB";
-            this.richTB.Size = new System.Drawing.Size(770, 401);
-            this.richTB.TabIndex = 4;
-            this.richTB.Text = "";
-            // 
             // fontSizeSCB
             // 
             this.fontSizeSCB.Items.AddRange(new object[] {
@@ -308,6 +295,34 @@
             this.fontSizeSCB.Name = "fontSizeSCB";
             this.fontSizeSCB.Size = new System.Drawing.Size(121, 25);
             this.fontSizeSCB.Click += new System.EventHandler(this.fontSizeSCB_Click);
+            // 
+            // toolStrip2
+            // 
+            this.toolStrip2.Dock = System.Windows.Forms.DockStyle.Left;
+            this.toolStrip2.Location = new System.Drawing.Point(0, 49);
+            this.toolStrip2.Name = "toolStrip2";
+            this.toolStrip2.Size = new System.Drawing.Size(26, 401);
+            this.toolStrip2.TabIndex = 3;
+            this.toolStrip2.Text = "toolStrip2";
+            // 
+            // richTB
+            // 
+            this.richTB.Location = new System.Drawing.Point(30, 49);
+            this.richTB.Name = "richTB";
+            this.richTB.Size = new System.Drawing.Size(770, 401);
+            this.richTB.TabIndex = 4;
+            this.richTB.Text = "";
+            // 
+            // toolStripSeparator2
+            // 
+            this.toolStripSeparator2.Name = "toolStripSeparator2";
+            this.toolStripSeparator2.Size = new System.Drawing.Size(6, 25);
+            // 
+            // currentUserL
+            // 
+            this.currentUserL.Name = "currentUserL";
+            this.currentUserL.Size = new System.Drawing.Size(86, 22);
+            this.currentUserL.Text = "toolStripLabel1";
             // 
             // Edit
             // 
@@ -358,5 +373,7 @@
         private System.Windows.Forms.ToolStripButton underlineSB;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
         private System.Windows.Forms.ToolStripComboBox fontSizeSCB;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
+        private System.Windows.Forms.ToolStripLabel currentUserL;
     }
 }

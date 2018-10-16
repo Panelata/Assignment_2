@@ -16,9 +16,10 @@ namespace Assignment2
         private SaveFileDialog saveFile = new SaveFileDialog();
         private OpenFileDialog openFile = new OpenFileDialog();
 
-        public Edit()
+        public Edit(string v)
         {
             InitializeComponent();
+            currentUserL.Text = v;
         }
 
         private void aboutToolStripMenuItem1_Click(object sender, EventArgs e)
