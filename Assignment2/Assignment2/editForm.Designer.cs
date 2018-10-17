@@ -399,7 +399,7 @@
             this.Controls.Add(this.toolStrip1);
             this.Controls.Add(this.menuStrip1);
             this.Name = "Edit";
-            this.Text = "editForm";
+            this.Text = "Edit";
             this.Load += new System.EventHandler(this.Edit_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
