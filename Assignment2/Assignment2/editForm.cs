@@ -186,5 +186,10 @@ namespace Assignment2
         {
             richTB.Paste();
         }
+
+        private void currentUserL_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

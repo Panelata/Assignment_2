@@ -72,7 +72,7 @@ namespace Assignment2
                 {
                     Console.WriteLine("THIS USER IS VIEW ONLY");
                     this.Hide();
-                    Form3 form3 = new Form3();
+                    Form3 form3 = new Form3(check.getUsername());
                     form3.ShowDialog();
                     this.Show();
                 } else

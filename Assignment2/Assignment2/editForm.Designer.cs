@@ -193,7 +193,7 @@
             // aboutToolStripMenuItem1
             // 
             this.aboutToolStripMenuItem1.Name = "aboutToolStripMenuItem1";
-            this.aboutToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.aboutToolStripMenuItem1.Size = new System.Drawing.Size(116, 22);
             this.aboutToolStripMenuItem1.Text = "About...";
             this.aboutToolStripMenuItem1.Click += new System.EventHandler(this.aboutToolStripMenuItem1_Click);
             // 
@@ -330,6 +330,7 @@
             this.currentUserL.Name = "currentUserL";
             this.currentUserL.Size = new System.Drawing.Size(86, 22);
             this.currentUserL.Text = "toolStripLabel1";
+            this.currentUserL.Click += new System.EventHandler(this.currentUserL_Click);
             // 
             // toolStrip2
             // 
@@ -340,7 +341,7 @@
             this.openSB});
             this.toolStrip2.Location = new System.Drawing.Point(0, 49);
             this.toolStrip2.Name = "toolStrip2";
-            this.toolStrip2.Size = new System.Drawing.Size(32, 401);
+            this.toolStrip2.Size = new System.Drawing.Size(24, 401);
             this.toolStrip2.TabIndex = 3;
             this.toolStrip2.Text = "toolStrip2";
             // 
@@ -350,7 +351,7 @@
             this.cutSB.Image = ((System.Drawing.Image)(resources.GetObject("cutSB.Image")));
             this.cutSB.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.cutSB.Name = "cutSB";
-            this.cutSB.Size = new System.Drawing.Size(29, 20);
+            this.cutSB.Size = new System.Drawing.Size(21, 20);
             this.cutSB.Text = "Cut";
             this.cutSB.Click += new System.EventHandler(this.toolStripButton3_Click);
             // 
@@ -360,7 +361,7 @@
             this.copySB.Image = ((System.Drawing.Image)(resources.GetObject("copySB.Image")));
             this.copySB.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.copySB.Name = "copySB";
-            this.copySB.Size = new System.Drawing.Size(29, 20);
+            this.copySB.Size = new System.Drawing.Size(21, 20);
             this.copySB.Text = "Copy";
             this.copySB.Click += new System.EventHandler(this.copySB_Click);
             // 
@@ -370,7 +371,7 @@
             this.openSB.Image = ((System.Drawing.Image)(resources.GetObject("openSB.Image")));
             this.openSB.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.openSB.Name = "openSB";
-            this.openSB.Size = new System.Drawing.Size(29, 20);
+            this.openSB.Size = new System.Drawing.Size(21, 20);
             this.openSB.Text = "Paste";
             this.openSB.Click += new System.EventHandler(this.openSB_Click);
             // 
