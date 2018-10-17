@@ -191,5 +191,10 @@ namespace Assignment2
         {
 
         }
+
+        private void Edit_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
